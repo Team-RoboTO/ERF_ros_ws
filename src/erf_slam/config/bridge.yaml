@@ -1,0 +1,78 @@
+topics:
+  -
+    topic: /map
+    type: nav_msgs/msg/OccupancyGrid
+    queue_size: 10
+    qos:
+      history: keep_last
+      durability: transient_local
+      reliability: reliable
+  -
+    topic: /odometry/robot
+    type: nav_msgs/msg/Odometry
+    queue_size: 10
+    qos:
+      history: keep_last
+      durability: transient_local
+      reliability: reliable
+  -
+    topic: /tf
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 10
+    qos:
+      history: keep_last
+      durability: transient_local
+      reliability: reliable
+  -
+    topic: /lidar_points
+    type: sensor_msgs/msg/PointCloud2
+    queue_size: 10
+    qos:
+      history: keep_last
+      durability: volatile
+      reliability: best_effort
+  -
+    topic: /scan
+    type: sensor_msgs/msg/LaserScan
+    queue_size: 1
+    qos:
+      history: keep_last
+      durability: volatile
+      reliability: best_effort
+  -
+    topic: /tf_static
+    type: tf2_msgs/msg/TFMessage
+    queue_size: 10
+    qos:
+      history: keep_last
+      durability: transient_local
+      reliability: reliable
+  -
+    topic: /cmd_vel
+    type: geometry_msgs/msg/Twist
+    
+  -
+    topic: /recognized_class
+    type: std_msgs/msg/String
+  -
+    topic: /camera_right_ir/camera_right/color/camera_info
+    type: sensor_msgs/msg/CameraInfo
+  -
+    topic: /camera_right_ir/camera_right/color/image_raw
+    type: sensor_msgs/msg/Image
+  -
+    topic: /camera_left_ir/camera_left/color/camera_info
+    type: sensor_msgs/msg/CameraInfo
+  -
+    topic: /camera_left_ir/camera_left/color/image_raw
+    type: sensor_msgs/msg/Image
+  -
+    topic: /d435/color/camera_info
+    type: sensor_msgs/msg/CameraInfo
+  -
+    topic: /d435/color/image_raw
+    type: sensor_msgs/msg/Image
+
+
+
+

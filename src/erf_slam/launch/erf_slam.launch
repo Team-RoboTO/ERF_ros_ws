@@ -1,0 +1,13 @@
+<launch>
+    <!-- PointCloud to LaserScan Node -->
+    <node name="pointcloud_to_laserscan_node" pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" output="screen">
+        <remap from="cloud_in" to="/lidar_points"/>
+        <remap from="scan" to="/scan"/>
+    </node>
+    
+    <!-- SLAM Toolbox -->
+    
+    
+    <!-- Load Parameters -->
+    <rosparam file="$(find erf_slam)/config/bridge.yaml" command="load"/>
+</launch>
