@@ -1,2 +1,0 @@
-erf_slam:start
--DCATKIN_DEVEL_PREFIX=/home/root/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/root/ros_ws/install -G Unix Makefiles
