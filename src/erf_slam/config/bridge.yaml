@@ -8,7 +8,7 @@ topics:
       durability: transient_local
       reliability: reliable
   -
-    topic: /odometry/robot
+    topic: /odometry/imu
     type: nav_msgs/msg/Odometry
     queue_size: 10
     qos:
@@ -24,7 +24,7 @@ topics:
       durability: transient_local
       reliability: reliable
   -
-    topic: /lidar_points
+    topic: /points_raw
     type: sensor_msgs/msg/PointCloud2
     queue_size: 10
     qos:
@@ -55,22 +55,22 @@ topics:
     topic: /recognized_class
     type: std_msgs/msg/String
   -
-    topic: /camera_right_ir/camera_right/color/camera_info
+    topic: /camera/left/right/camera_info
     type: sensor_msgs/msg/CameraInfo
   -
-    topic: /camera_right_ir/camera_right/color/image_raw
+    topic: /camera/left/right/image_raw
     type: sensor_msgs/msg/Image
   -
-    topic: /camera_left_ir/camera_left/color/camera_info
+    topic: /camera/right/left/camera_info
     type: sensor_msgs/msg/CameraInfo
   -
-    topic: /camera_left_ir/camera_left/color/image_raw
+    topic: /camera/right/left/image_raw
     type: sensor_msgs/msg/Image
   -
-    topic: /d435/color/camera_info
+    topic: /camera/color/camera_info
     type: sensor_msgs/msg/CameraInfo
   -
-    topic: /d435/color/image_raw
+    topic: /camera/color/image_raw
     type: sensor_msgs/msg/Image
 
 
