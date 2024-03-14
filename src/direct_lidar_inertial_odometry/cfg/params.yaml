@@ -14,7 +14,7 @@ dlio:
 
   frames:
     odom: odom
-    baselink: base_footprint
+    baselink: base_link
     lidar: lidar
     imu: imu
 

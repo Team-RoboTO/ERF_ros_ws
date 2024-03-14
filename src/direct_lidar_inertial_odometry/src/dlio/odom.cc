@@ -169,7 +169,7 @@ void dlio::OdomNode::getParams() {
 
   // Frames
   ros::param::param<std::string>("~dlio/frames/odom", this->odom_frame, "odom");
-  ros::param::param<std::string>("~dlio/frames/baselink", this->baselink_frame, "base_footprint");
+  ros::param::param<std::string>("~dlio/frames/baselink", this->baselink_frame, "base_link");
   ros::param::param<std::string>("~dlio/frames/lidar", this->lidar_frame, "lidar");
   ros::param::param<std::string>("~dlio/frames/imu", this->imu_frame, "imu");
 
