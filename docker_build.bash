@@ -1,1 +1,1 @@
-docker build . --tag roboto_docker
+docker build --tag roboto_docker  .
