@@ -1,0 +1,15 @@
+# Use a base image
+FROM dustynv/ros:noetic-ros-base-l4t-r32.5.0
+
+# disable terminal interaction for apt
+ENV DEBIAN_FRONTEND=noninteractive
+ENV SHELL /bin/bash
+
+SHELL ["/bin/bash", "-c"]
+RUN sudo apt update
+RUN sudo apt install libomp-dev libpcl-dev libeigen3-dev
+RUN sudo apt install ros-noetic-slam-toolbox
+RUN sudo apt install ros-noeticpoint-cloud-to-laserscan
+
+# Set the working directory
+WORKDIR /
