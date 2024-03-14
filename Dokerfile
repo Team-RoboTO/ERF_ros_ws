@@ -1,5 +1,5 @@
 # Use a base image
-FROM dustynv/ros:noetic-ros-base-l4t-r32.5.0
+FROM dustynv/ros:melodic-desktop-l4t-r32.7.1
 
 # disable terminal interaction for apt
 ENV DEBIAN_FRONTEND=noninteractive
